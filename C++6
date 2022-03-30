@@ -1,0 +1,34 @@
+#include <iostream>
+
+int main() {
+  std::cout<<"Array in for loop";
+  int ui [10];
+  ui[1]=1;
+  ui[2]=2;
+  ui[3]=3;
+  for(size_t l{};l<10;++l){
+    ui[l]=l*3;
+    std::cout<<"\nl value is: "<<ui[l];
+  }
+  std::cout<<"\nui value is: "<<ui[1];
+  std::cout<<"\nui value is: "<<ui[2];
+  for(size_t o{}; o<10; ++o){
+    std::cout<<"\nui value are: "<<ui[o];    
+  }
+   double s[]={32.9,9.2,7.4};
+  int op;
+  for(int e;e<10;++e){
+    e*=op;
+  }
+  std::cout<<"\nstop";
+  std::cout<<"\n----------------";
+  std::cout<<"\nArray with sizeof For loop";
+  int garbage[]= {1,2,3,4,5,6};
+  int total1{sizeof(garbage)/sizeof(garbage[0])};
+  for(size_t i{0};i<10;++i){
+    std::cout<<"\nGarbage is:"<<garbage[i];    std::cout<<"\nsizeof(garbage)is: "<<sizeof(garbage);
+  std::cout<<"\nElement: "<<sizeof(garbage[0]);
+  std::cout<<"\nsizeof(garbage) "<<sizeof(garbage[1]);
+    std::cout<<"\nTotal1:"<<total1;
+  }
+}
